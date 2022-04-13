@@ -8,19 +8,23 @@
 
 ## :man_technologist: Installation
 
-- After cloning the project, run:
+1. After cloning the project, run:
 
 ```bash
 composer install
 ```
-- In config/services.php file replace 'YOUR_API_TOKEN' with your bot's token
+2. Create a Discord application.
+
+3. Click the Create a Bot User button on your Discord application.
+
+4. Paste your bot's API token, found under App Bot User, in your services.php config file:
 ```php
     // config/services.php
     'discord' => [
         'token' => 'YOUR_API_TOKEN',
     ],
 ```
-- Add the bot to your server and identify it by running the artisan command:
+5. Add the bot to your server and identify it by running the artisan command:
 
 ```shell
     php artisan discord:setup
