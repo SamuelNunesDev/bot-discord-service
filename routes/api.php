@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/send', [DiscordBotController::class, 'send']);
+Route::post('/send', [DiscordBotController::class, 'send']);

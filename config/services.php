@@ -31,6 +31,6 @@ return [
     ],
 
     'discord' => [
-        'token' => 'OTYzNjM1MTUyNzc5NjIwMzY0.YlY9Kw.po49TsH_pkfbGeuMk_IIsQTR1Nc',
+        'token' => 'OTYzNjM1MTUyNzc5NjIwMzY0.YlY9Kw.4BvqmjR01yVMwC_qPT5lA3EDeus',
     ],
 ];
