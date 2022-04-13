@@ -31,6 +31,6 @@ return [
     ],
 
     'discord' => [
-        'token' => 'OTYzNjM1MTUyNzc5NjIwMzY0.YlY9Kw.4BvqmjR01yVMwC_qPT5lA3EDeus',
+        'token' => 'YOUR_API_TOKEN',
     ],
 ];
