@@ -34,7 +34,18 @@ composer install
 - Make a post request (example: http://localhost:8000/api/send) with the following body:
 ```json
     {
-        "message": "Hello, World!",
-        "channel_id": "564984616574984"
-    }
+	"message": [
+		{
+			"text": "foo"
+		},
+		{
+			"title": "bar",
+			"type": "rich",
+			"description": "lorem ipsum,
+			"color": "999",
+			"timestamp": "2022-04-18T22:42Z"
+		}
+	],
+	"channel_id": "0000000000000000"
+}
 ```
