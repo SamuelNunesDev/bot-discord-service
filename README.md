@@ -32,7 +32,7 @@ composer install
 ## 🧐 How to use
 
 - Make a post request (example: http://localhost:8000/api/send) with the following body:
-- The first object only sends a text message, the second creates an [https://discord.com/developers/docs/resources/channel#embed-object](embed)
+- The first object only sends a text message, the second creates an [embed](https://discord.com/developers/docs/resources/channel#embed-object)
 ```json
     {
 	"message": [
