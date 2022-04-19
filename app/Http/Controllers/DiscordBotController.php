@@ -15,7 +15,8 @@ class DiscordBotController extends Controller
             $notification = new DiscordBot();
             $notification->discord_channel = $request->channel_id;
             $notification->channel_id = $request->channel_id;
-            $notification->message = $request->message;
+            $notification->message = $request->message[0]['text'];
+            $notification->embed = $request->message[1];
             $notification->notify(new DiscordNotification($notification));
         } catch(Exception $e) {
             dd($e);

@@ -66,6 +66,6 @@ class DiscordNotification extends Notification
 
     public function toDiscord($notifiable)
     {
-        return DiscordMessage::create($this->notification->message);
+        return DiscordMessage::create($this->notification->message, $this->notification->embed);
     }
 }
