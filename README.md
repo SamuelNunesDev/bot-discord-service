@@ -41,7 +41,7 @@ composer install
 		{
 			"title": "bar",
 			"type": "rich",
-			"description": "lorem ipsum,
+			"description": "lorem ipsum",
 			"color": "999",
 			"timestamp": "2022-04-18T22:42Z"
 		}
