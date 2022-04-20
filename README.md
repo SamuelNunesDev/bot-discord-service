@@ -34,15 +34,15 @@ composer install
 - Make a post request (example: http://localhost:8000/api/send) with the following body:
 - The first object only sends a text message, the second creates an [embed](https://discord.com/developers/docs/resources/channel#embed-object)
 ```json
-    {
-	"message": "",
-	"embed": {
-      "title": "Embed Title",
-      "type": "rich",
-      "description": "content embed",
-      "color": "777",
-      "timestamp": "2022-04-18T22:42Z"
-	},
-	"channel_id": "000000000000"
+{
+  "message": "",
+  "embed": {
+    "title": "Embed Title",
+    "type": "rich",
+    "description": "content embed",
+    "color": "777",
+    "timestamp": "2022-04-18T22:42Z"
+  },
+  "channel_id": "000000000000"
 }
 ```
