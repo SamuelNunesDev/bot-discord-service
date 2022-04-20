@@ -35,18 +35,14 @@ composer install
 - The first object only sends a text message, the second creates an [embed](https://discord.com/developers/docs/resources/channel#embed-object)
 ```json
     {
-	"message": [
-		{
-			"text": "foo"
-		},
-		{
-			"title": "bar",
-			"type": "rich",
-			"description": "lorem ipsum",
-			"color": "999",
-			"timestamp": "2022-04-18T22:42Z"
-		}
-	],
-	"channel_id": "0000000000000000"
+	"message": "",
+	"embed": {
+      "title": "Embed Title",
+      "type": "rich",
+      "description": "content embed",
+      "color": "777",
+      "timestamp": "2022-04-18T22:42Z"
+	},
+	"channel_id": "000000000000"
 }
 ```
