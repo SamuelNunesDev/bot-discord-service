@@ -31,10 +31,12 @@ composer install
 ```
 ## 🧐 How to use
 
-- Make a post request (example: http://localhost:8000/api/send) with the following body:
-- The first object only sends a text message, the second creates an [embed](https://discord.com/developers/docs/resources/channel#embed-object)
-```json
-{
+- Make a post request (example: http://localhost:8000/api/send):
+- The "message" attribute generates a simple text message.
+- The "embed" attribute is an object and each attribute is responsible for generating an [embed](https://discord.com/developers/docs/resources/channel#embed-object).
+- The "channel_id" attribute is the id of the channel where you want to send the message. 
+```bash
+$ curl -d '{
   "message": "",
   "embed": {
     "title": "Embed Title",
@@ -44,5 +46,6 @@ composer install
     "timestamp": "2022-04-18T22:42Z"
   },
   "channel_id": "000000000000"
-}
+}' -H 'Content-Type: application/json' http://localhost:8000/api/send
+
 ```
